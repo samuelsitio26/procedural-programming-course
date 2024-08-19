@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "t01&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "200\r\nc\r\n-15\r\n41414\r\n14.12345\r\n",
+      "output": "200\r\nc\r\n-15\r\n41414\r\n14.12\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01&#45;01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "99\r\nQ\r\n-31\r\n65000\r\n-1.2345\r\n",
+      "output": "99\r\nQ\r\n-31\r\n65000\r\n-1.23\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01&#45;02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "16.12\r\n29.3311\r\n-1\r\n-6.6789\r\n0.0\r\n",
+      "output": "37.772\r\n7.554\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01&#45;02&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "11.12\r\n-22.3311\r\n-76.5\r\n667.89\r\n0.1\r\n",
+      "output": "580.279\r\n116.056\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01&#45;03&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "3\r\n4\r\n11\r\n",
+      "output": "48\r\n0\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t01&#45;03&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "4\r\n1\r\n8\r\n",
+      "output": "8\r\n1\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
