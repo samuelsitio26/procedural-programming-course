@@ -1,0 +1,3 @@
+mencoba menyelesiakan peroslan T09 Dynamic Memory Allocation
+mencoba mensubmit 
+mencoba mensubmit t01 & t02

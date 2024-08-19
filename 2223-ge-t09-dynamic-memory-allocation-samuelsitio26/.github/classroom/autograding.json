@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "t09&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "create-student#12S22999#Wiro Sableng#2022#Information Systems\r\nprint-students\r\ncreate-student#12S22998#Jaka Sembung#2022#Information Systems\r\nprint-students\r\n---\r\n",
+      "output": "12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "t09&#45;02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "create-student#12S22999#Wiro Sableng#2022#Information Systems\r\nprint-students\r\ncreate-student#12S22998#Jaka Sembung#2022#Information Systems\r\nprint-students\r\ncreate-course#12S1102#Visual Programming#2#D\r\nprint-courses\r\ncreate-course#10S1002#Procedural Programming#2#C\r\nprint-courses\r\nprint-students\r\nprint-courses\r\n---\r\n",
+      "output": "12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|C\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|C\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "t09&#45;03&#45;1",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "create-student#12S22999#Wiro Sableng#2022#Information Systems\r\nprint-students\r\ncreate-student#12S22998#Jaka Sembung#2022#Information Systems\r\nprint-students\r\ncreate-course#12S1102#Visual Programming#2#D\r\nprint-courses\r\ncreate-course#10S1002#Procedural Programming#2#C\r\nprint-courses\r\nprint-students\r\nfind-student-by-id#12S22998\r\nprint-courses\r\nfind-student-by-id#12S22999\r\n---\r\n",
+      "output": "12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|C\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|C\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "t09&#45;04&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_04",
+      "input": "create-student#12S22999#Wiro Sableng#2022#Information Systems\r\nprint-students\r\ncreate-student#12S22998#Jaka Sembung#2022#Information Systems\r\nprint-students\r\ncreate-course#12S1102#Visual Programming#2#D\r\nprint-courses\r\ncreate-course#10S1002#Procedural Programming#2#C\r\nprint-courses\r\nprint-students\r\nfind-student-by-id#12S22998\r\nprint-courses\r\nfind-student-by-id#12S22990\r\nfind-course-by-code#10S1002\r\nfind-course-by-code#10S1000\r\nfind-student-by-id#12S22999\r\nfind-course-by-code#12S1102\r\n---\r\n",
+      "output": "12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|C\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S22998|Jaka Sembung|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|C\r\n10S1002|Procedural Programming|2|C\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S1102|Visual Programming|2|D\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    }
+  ]
+}
