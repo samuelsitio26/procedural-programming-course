@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "f01&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "todo-print-all\r\n---\r\n",
+      "output": "1|08:30|Group Project|canceled\r\n2|10:00|Class: Fantastic Pempros|done\r\n3|13:30|Group Project|none\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "f01&#45;01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "todo-add#15:00#Class: Pempros lab\r\ntodo-add#17:10#SI v. IF semi match\r\ntodo-print-all\r\n---\r\n",
+      "output": "1|08:30|Group Project|canceled\r\n2|10:00|Class: Fantastic Pempros|done\r\n3|13:30|Group Project|none\r\n4|15:00|Class: Pempros lab|none\r\n5|17:10|SI v. IF semi match|none\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "f01&#45;01&#45;03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "todo-add#15:00#Class: Pempros lab\r\ntodo-status#3#done\r\ntodo-add#17:10#SI v. IF semi match\r\ntodo-print-all\r\n---\r\n",
+      "output": "1|08:30|Group Project|canceled\r\n2|10:00|Class: Fantastic Pempros|done\r\n3|13:30|Group Project|done\r\n4|15:00|Class: Pempros lab|none\r\n5|17:10|SI v. IF semi match|none\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "f01&#45;01&#45;04",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "todo-add#15:00#Class: Pempros lab\r\ntodo-status#3#done\r\ntodo-add#17:10#SI v. IF semi match\r\ntodo-status#2#canceled\r\ntodo-print-all\r\n---\r\n",
+      "output": "1|08:30|Group Project|canceled\r\n2|10:00|Class: Fantastic Pempros|done\r\n3|13:30|Group Project|done\r\n4|15:00|Class: Pempros lab|none\r\n5|17:10|SI v. IF semi match|none\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "f01&#45;01&#45;05",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "todo-add#15:00#Class: Pempros lab\r\ntodo-status#3#done\r\ntodo-add#17:10#SI v. IF semi match\r\ntodo-print-all\r\ntodo-status#4#done\r\ntodo-status#5#done\r\ntodo-status#5#canceled\r\ntodo-print-all\r\n---\r\n",
+      "output": "1|08:30|Group Project|canceled\r\n2|10:00|Class: Fantastic Pempros|done\r\n3|13:30|Group Project|done\r\n4|15:00|Class: Pempros lab|none\r\n5|17:10|SI v. IF semi match|none\r\n1|08:30|Group Project|canceled\r\n2|10:00|Class: Fantastic Pempros|done\r\n3|13:30|Group Project|done\r\n4|15:00|Class: Pempros lab|done\r\n5|17:10|SI v. IF semi match|done\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
