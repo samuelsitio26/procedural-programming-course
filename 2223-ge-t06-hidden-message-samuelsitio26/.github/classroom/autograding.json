@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "m01&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "Jaka Sembung bawa golok.\r\n",
+      "output": "Jaka Se\r\nmbung b\r\nawa gol\r\nok.####\r\nJmaoabwkkua.an # gg#S o#ebl#\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "m01&#45;01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "Wiro Sableng, pendekar coding yang cinta damai dan rajin menabung.\r\n",
+      "output": "Wiro Sabl\r\neng, pend\r\nekar codi\r\nng yang c\r\ninta dama\r\ni dan raj\r\nin menabu\r\nng.######\r\nWeeniiininkgn ngrga td .o,ryaam#   a ne#Spcnd n#aeogara#bnd mab#ldicaju#    \r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "m01&#45;01&#45;03",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "Uxo4QuVaCDzmkiQs pPpnYg7lT917KsthVMKT2gFJ8enRI5byB80m7J 72aKPafHebjqbssytGhXjD7MFJlZkhuCV2UIRl tGtC\r\n",
+      "output": "Uxo4QuV\r\naCDzmki\r\nQs pPpn\r\nYg7lT91\r\n7KsthVM\r\nKT2gFJ8\r\nenRI5by\r\nB80m7J \r\n72aKPaf\r\nHebjqbs\r\nsytGhXj\r\nD7MFJlZ\r\nkhuCV2U\r\nIRl tGt\r\nC######\r\nUaQY7KeB7HsDkICxCsgKTn82ey7hR#oD 7s2R0abtMul#4zpltgImKjGFC #QmPThF57PqhJVt#ukp9VJbJabXl2G#Vin1M8y fsjZUt#\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "m01&#45;01&#45;04",
+      "setup": "make compile",
+      "run": "make -s test_04",
+      "input": "Uxo4QuVaCDzmkiQs pPpnYg7lT917KsthVMKT2gFJ8enRI5byB80m7J 72aKPafHebjqbssytGhXjD7MFJlZkhuCV2UIRl tGtC\r\n",
+      "output": "Uxo4QuVaCDzm\r\nkiQs pPpnYg7\r\nlT917KsthVMK\r\nT2gFJ8enRI5b\r\nyB80m7J 72aK\r\nPafHebjqbssy\r\ntGhXjD7MFJlZ\r\nkhuCV2UIRl t\r\nGtC#########\r\nUklTyPtkGxiT2BaGhtoQ9g8fhuC4s1F0HXC#Q 7JmejV#upK87bD2#VPseJj7U#aptn qMI#CnhR7bFR#DYVI2sJl#zgM5asl #m7KbKyZt#\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 25
+    }
+  ]
+}
