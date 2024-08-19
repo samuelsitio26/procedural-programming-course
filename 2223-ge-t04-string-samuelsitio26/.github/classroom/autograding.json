@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "t04&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "Jaka Sembung bawa golok.\r\n",
+      "output": "Jaka Se\r\nmbung b\r\nawa gol\r\nok.####\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "Jaka Sembung bawa golok.\r\n",
+      "output": "Jaka Semb\r\nung bawa \r\ngolok.###\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;01&#45;03",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "Wiro Sableng, pendekar coding yang cinta damai dan rajin menabung.\r\n",
+      "output": "Wiro Sa\r\nbleng, \r\npendeka\r\nr codin\r\ng yang \r\ncinta d\r\namai da\r\nn rajin\r\n menabu\r\nng.####\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t04&#45;01&#45;04",
+      "setup": "make compile",
+      "run": "make -s test_04",
+      "input": "Uxo4QuVaCDzmkiQs pPpnYg7lT917KsthVMKT2gFJ8enRI5byB80m7J 72aKPafHebjqbssytGhXjD7MFJlZkhuCV2UIRl tGtC\r\n",
+      "output": "Uxo4QuVaCDzm\r\nkiQs pPpnYg7\r\nlT917KsthVMK\r\nT2gFJ8enRI5b\r\nyB80m7J 72aK\r\nPafHebjqbssy\r\ntGhXjD7MFJlZ\r\nkhuCV2UIRl t\r\nGtC#########\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 40
+    }
+  ]
+}
