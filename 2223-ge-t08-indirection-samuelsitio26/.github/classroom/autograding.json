@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "t08&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "",
+      "output": "12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|D\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "",
+      "output": "12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|D\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S1102|12S22999|None|0.00\r\n10S1002|12S22999|None|0.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;03&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "",
+      "output": "12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|D\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S1102|12S22999|None|0.00\r\n10S1002|12S22999|None|0.00\r\n12S1102|12S22999|A|8.00\r\n10S1002|12S22999|AB|7.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;04&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_04",
+      "input": "",
+      "output": "12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|D\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S1102|12S22999|None|0.00\r\n10S1002|12S22999|None|0.00\r\n12S1102|12S22999|A|8.00\r\n10S1002|12S22999|AB|7.00\r\n12S22999|Wiro Sableng|2022|Information Systems|3.75\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;05&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_05",
+      "input": "",
+      "output": "12S1102|Visual Programming|2|D\r\n12S1101|Information System Fundamentals|3|D\r\n10S1002|Procedural Programming|2|D\r\n10S1001|Discrete Mathematics|3|D\r\n12S22999|Wiro Sableng|2022|Information Systems|0.00\r\n12S1102|12S22999|None|0.00\r\n12S1101|12S22999|None|0.00\r\n10S1002|12S22999|None|0.00\r\n10S1001|12S22999|None|0.00\r\n12S1102|12S22999|A|8.00\r\n12S1101|12S22999|A|12.00\r\n10S1002|12S22999|AB|7.00\r\n10S1001|12S22999|A|12.00\r\n12S22999|Wiro Sableng|2022|Information Systems|3.90\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
