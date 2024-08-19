@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "t07&#45;00&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_00",
+      "input": "",
+      "output": "10S1002|Procedural Programming|2|D\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 0
+    },
+    {
+      "name": "t07&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "",
+      "output": "12S22999|Wiro Sableng|2022|Information Systems\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 30
+    },
+    {
+      "name": "t07&#45;02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "",
+      "output": "10S1002|Procedural Programming|2|D\r\n12S22999|Wiro Sableng|2022|Information Systems\r\n10S1002|12S22999|None|0.00\r\n10S1002|12S22999|AB|7.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 30
+    },
+    {
+      "name": "t07&#45;03&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "",
+      "output": "12S1102|Visual Programming|2|D\r\n10S1002|Procedural Programming|2|D\r\n12S22999|Wiro Sableng|2022|Information Systems\r\n12S1102|12S22999|None|0.00\r\n10S1002|12S22999|None|0.00\r\n12S1102|12S22999|A|8.00\r\n10S1002|12S22999|AB|7.00\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 40
+    }
+  ]
+}
