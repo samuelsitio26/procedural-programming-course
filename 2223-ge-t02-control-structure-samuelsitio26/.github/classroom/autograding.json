@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "t02&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "3\r\n",
+      "output": "March\r\nApril\r\nMay\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02&#45;01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "11\r\n",
+      "output": "November\r\nDecember\r\nNew year\r\nJanuary\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02&#45;02&#45;03",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "1\r\n",
+      "output": "January\r\nFebruary\r\nMarch\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02&#45;01&#45;04",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "12\r\n",
+      "output": "December\r\nNew year\r\nJanuary\r\nFebruary\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02&#45;02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "4\r\n7\r\n",
+      "output": "9\r\n15\r\n24\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t02&#45;02&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "0\r\n2\r\n",
+      "output": "0\r\n3\r\n3\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t02&#45;02&#45;03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "10\r\n2\r\n",
+      "output": "15\r\n6\r\n21\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
