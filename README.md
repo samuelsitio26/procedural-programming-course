@@ -4,7 +4,7 @@ Repository ini merupakan kumpulan tugas dan ujian yang dikerjakan selama mengiku
 
 > **Mahasiswa**: Samuel Janring Sitio (12S22032)  
 > **Program Studi**: Sistem Informasi  
-> **Tahun Akademik**: 2022/2023  
+> **Tahun Akademik**: 2023/2024  
 
 ---
 
